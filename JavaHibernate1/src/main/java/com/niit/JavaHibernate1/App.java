@@ -14,7 +14,7 @@ import org.hibernate.cfg.Configuration;
 
 public class App {
   public static void main(String[] args) {
-  Student student = new Student(1,"kowsar",1,11);
+  Student student = new Student(22,"pinky",2,2);
   Configuration configuration = new Configuration().configure().addAnnotatedClass(Student.class);
   SessionFactory sessionFactory = configuration.buildSessionFactory();
    Session session = sessionFactory.openSession();
